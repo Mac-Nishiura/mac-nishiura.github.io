@@ -10,8 +10,8 @@ var changeText = function () {
   h1[1].after(q)
 }
 var removeText = function () {
-  let pp = document.getElementsById('p');
-  let qq = document.getElementsById('q');
+  let pp = document.getElementsById("p");
+  let qq = document.getElementsById("q");
   pp.remove();
   qq.remove();
 }
