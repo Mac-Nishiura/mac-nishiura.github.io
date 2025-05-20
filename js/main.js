@@ -4,7 +4,7 @@ var changeText = function () {
   var q = document.createElement('q');
   var random_1 = Math.floor(Math.random()*10);
   var random_2 = Math.floor(Math.random()*10);
-  var random_3 = Math.floor(Math.random()*2+1);
+  var random_3 = Math.floor(Math.random()*2)+1;
   p.innerHTML = random_1+" X "+random_2;
   q.innerHTML = (random_1*random_2)*random_3; 
   h1[0].after(p);
