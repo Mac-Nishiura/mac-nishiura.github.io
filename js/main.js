@@ -8,13 +8,13 @@ var changeText = function () {
   p.innerHTML = random_1+" X "+random_2;
   q.innerHTML = random_1*random_2+random_3; 
   h1[0].after(p);
-  h1[1].after(q);
+  h1[1].after(q)
 }
 var removeText = function () {
   var pp = document.getElementsByTagName('p');
   var qq = document.getElementsByTagName('q');
   pp.remove();
-  qq.remove();
+  qq.remove()
 }
 h2[0].addEventListener('click', changeText);
 h2[1].addEventListener('click', removeText);
