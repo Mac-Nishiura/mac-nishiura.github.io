@@ -1,5 +1,9 @@
 var h1 = document.getElementsByTagName('h1');
 var changeText = function () {
+  var pp = document.getElementByTagName('p');
+  var qq = cocument.getElementByTagName('q');
+  pp.remove();
+  qq.remove();
   var p = document.createElement('p');
   var q = document.createElement('q');
   var random_1 = Math.floor(Math.random()*10);
