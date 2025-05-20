@@ -16,4 +16,4 @@ var removeText = function () {
   qq.remove();
 }
 h1[0].addEventListener('click', changeText);
-h1[1].addEventListener('click', removeTeaxt);
+h1[1].addEventListener('click', removeText);
