@@ -1,7 +1,7 @@
 var h1 = document.getElementsByTagName('h1');
 var changeText = function () {
-  let pp = document.getElementByTagName('p');
-  let qq = cocument.getElementByTagName('q');
+  var pp = document.getElementsByTagName('p');
+  var qq = cocument.getElementsByTagName('q');
   pp.remove();
   qq.remove();
   var p = document.createElement('p');
