@@ -1,4 +1,4 @@
-var h1 = document.getElementsByTagName('h1');
+var h2 = document.getElementsByTagName('h2');
 var changeText = function () {
   var p = document.createElement('p');
   var q = document.createElement('q');
@@ -16,5 +16,5 @@ var removeText = function () {
   pp.remove();
   qq.remove();
 }
-h1[0].addEventListener('click', changeText);
-h1[1].addEventListener('click', removeText);
+h2[0].addEventListener('click', changeText);
+h2[1].addEventListener('click', removeText);
