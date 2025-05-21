@@ -16,5 +16,11 @@ var removeText = function () {
   pp.remove();
   qq.remove()
 }
+
+var button = document.getElementsByTagName('button');
+
+button[0].addEventListener('click', changeText);
+button[1].addEventListener('click', removeText);
+
 h6[0].addEventListener('click', changeText);
 h6[1].addEventListener('click', removeText);
