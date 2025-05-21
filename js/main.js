@@ -1,4 +1,4 @@
-var h2 = document.getElementsByTagName('h2');
+var h3 = document.getElementsByTagName('h3');
 var changeText = function () {
   var p = document.createElement('p');
   var q = document.createElement('q');
@@ -7,8 +7,8 @@ var changeText = function () {
   var random_3 = Math.floor(Math.random()*3);
   p.innerHTML = random_1+" X "+random_2;
   q.innerHTML = random_1*random_2+random_3; 
-  h2[0].after(p);
-  h2[1].after(q)
+  h3[0].after(p);
+  h3[1].after(q)
 }
 var removeText = function () {
   var pp = document.getElementsByTagName('p');
@@ -16,5 +16,5 @@ var removeText = function () {
   pp.remove();
   qq.remove()
 }
-h2[0].addEventListener('click', changeText);
-h2[1].addEventListener('click', removeText);
+h3[0].addEventListener('click', changeText);
+h3[1].addEventListener('click', removeText);
