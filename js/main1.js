@@ -11,10 +11,10 @@ var changeText = function () {
   h6[1].after(q)
 }
 var removeText = function () {
-  var pp = document.getElementsByTagName('p');
-  var qq = document.getElementsByTagName('q');
-  pp.innerHTML.remove();
-  qq.innerHTML.remove()
+  const pp = document.querySelection('p');
+  const qq = document.querySelection('q');
+  pp.remove();
+  qq.remove()
 }
 h6[0].addEventListener('click', changeText);
 h6[1].addEventListener('click', removeText);
