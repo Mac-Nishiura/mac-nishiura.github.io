@@ -17,10 +17,11 @@ var removeText = function () {
   qq.remove()
 }
 
-var button = document.getElementsByTagName('button');
+let quest = document.getElementById('btn');
+let erase = document.getElementById('bbttnn');
 
-button[0].addEventListener('click', changeText);
-button[1].addEventListener('click', removeText);
+quest.addEventListener('click', changeText);
+erase.addEventListener('click', removeText);
 
 h6[0].addEventListener('click', changeText);
 h6[1].addEventListener('click', removeText);
