@@ -16,5 +16,12 @@ var removeText = function () {
   pp.remove();
   qq.remove()
 }
+
+let quest = document.getElementById('btn');
+let erase = document.getElementById('bbttnn');
+
+quest.addEventListener('click', changeText);
+erase.addEventListener('click', removeText);
+
 h6[0].addEventListener('click', changeText);
 h6[1].addEventListener('click', removeText);
