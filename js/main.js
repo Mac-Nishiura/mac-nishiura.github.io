@@ -7,8 +7,8 @@ var changeText = function () {
   var random_3 = Math.floor(Math.random()*3);
   p.innerHTML = random_1+" X "+random_2;
   q.innerHTML = random_1*random_2+random_3; 
-  h1[0].after(p);
-  h1[1].after(q)
+  h2[0].after(p);
+  h2[1].after(q)
 }
 var removeText = function () {
   var pp = document.getElementsByTagName('p');
