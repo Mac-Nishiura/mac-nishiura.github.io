@@ -11,8 +11,8 @@ var changeText = function () {
   h6[1].after(q)
 }
 var removeText = function () {
-  const pp = document.querySelection('p');
-  const qq = document.querySelection('q');
+  const pp = document.querySelector('p');
+  const qq = document.querySelector('q');
   pp.remove();
   qq.remove()
 }
