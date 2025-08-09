@@ -12,7 +12,8 @@ function changeEnglish() {
   q.width = 80; 
   h6[0].after(p);
   h6[1].after(q);
-  return;
+  setTimeout({order:rand, handleEvent:changeJapanese},3000)
+  return rand;
 }
 function changeJapanese() {
   var r = document.createElement('r');
