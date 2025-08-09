@@ -30,10 +30,10 @@ let erase = document.getElementById('bbbtttnnn')
  
 
 question.addEventListener('click', changeEnglish);
-answer.addEventListner('click', changeJapanese);
+answer.addEventListner('click', changeJapanese(3));
 erase.addEventListener('click', removeText);
 
 h6[0].addEventListener('click', changeEnglish);
-h6[2].addEventListener('click', changeJapanese);
+h6[2].addEventListener('click', changeJapanese(3));
 
 console.log(rand)
