@@ -9,7 +9,7 @@ var changeEnglish = function() {
   var q = document.createElement('img');
   p.innerHTML = english_adjectives[rand];
   q.src = `../photos/${picture_adjectives[rand]}`;
-  q.width = 30; 
+  q.width = 80; 
   h6[0].after(p);
   h6[1].after(q);
   return;
