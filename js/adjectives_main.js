@@ -6,17 +6,19 @@ var h6 = document.getElementsByTagName('h6');
 var changeEnglish = function() {
   var rand = Math.floor(Math.random()*10);
   var p = document.createElement('p');
-  var q = document.createElement('q');
+  var q = document.createElement('img');
   p.innerHTML = english_adjectives[rand];
-  q.innerHTML = "<img src=`../photos/${picture_adjectives[rand]}` width=30　height=30>"; 
+  q.src = `../photos/${picture_adjectives[rand]}`;
+  q.width = 30; 
   h6[0].after(p);
   h6[1].after(q);
   return rand;
 }
 var changePicture = function() {
   var ran = Math.floor(Math.random()*10);
-  var q = document.createElement('q');
-  q.innerHTML = "<img src=`../photos/${picture_adjectives[ran]}`　width=30　height=30>"; 
+  var q = document.createElement('img');
+  q.src = `../photos/${picture_adjectives[ran]}`;　
+  q.width = 30; 
   h6[1].after(q);
   return ran;
 }
