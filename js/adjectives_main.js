@@ -1,6 +1,6 @@
-let english_adjectives = ["HIGH","LOW","THICK","THIN","BIG","SMALL","MUCH","LITTLE","NEW","OLD"];
-let picture_adjectives = ["Picture1.jpg","Picture2.jpg","Picture3.jpg","Picture4.jpg","Picture5.jpg","Picture6.jpg","Picture7.jpg","Picture8.jpg","Picture9.jpg","Picture10.jpg"];
-let japanese_adjectives = ["TAKAI","HIKUI","ATSUI","USUI","OHKII","CHIISAI","OHI","SUKUNAI","ATARASHII","FURUI"];
+var english_adjectives = ["HIGH","LOW","THICK","THIN","BIG","SMALL","MUCH","LITTLE","NEW","OLD"];
+var picture_adjectives = ["Picture1.jpg","Picture2.jpg","Picture3.jpg","Picture4.jpg","Picture5.jpg","Picture6.jpg","Picture7.jpg","Picture8.jpg","Picture9.jpg","Picture10.jpg"];
+var japanese_adjectives = ["TAKAI","HIKUI","ATSUI","USUI","OHKII","CHIISAI","OHI","SUKUNAI","ATARASHII","FURUI"];
 var h6 = document.getElementsByTagName('h6');
 
 var changeEnglish = function() {
