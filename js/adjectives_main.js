@@ -44,6 +44,6 @@ answer.addEventListener('click', changeJapanese);
 erase.addEventListener('click', removeText);
 
 h6[0].addEventListener('click', changeEnglish);
-h6[1].sddEventListener('click', changePicture);
+h6[1].addEventListener('click', changePicture);
 h6[2].addEventListener('click', changeJapanese);
 
