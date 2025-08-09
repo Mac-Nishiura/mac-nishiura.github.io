@@ -4,18 +4,21 @@ var japanese_adjectives = ['TAKAI','HIKUI','ATSUI','USUI','OHKII','CHIISAI','OHI
 var h6 = document.getElementsByTagName('h6');
 
 var changeEnglish = function() {
-  var ran = Math.floor(Math.random()*10);
-  var p = document.createElement('p');
-  p.innerHTML = english_adjectives[ran]; 
-  h6[0].after(p);
-  return ran;
-}
-var changePicture = function() {
   var rand = Math.floor(Math.random()*10);
+  var p = document.createElement('p');
   var q = document.createElement('q');
+  p.innerHTML = english_adjectives[rand];
   q.innerHTML = "<img src='../photos/'+picture_adjectives[rand]　width=30　height=30>"; 
+  h6[0].after(p);
   h6[1].after(q);
   return rand;
+}
+var changePicture = function() {
+  var ran = Math.floor(Math.random()*10);
+  var q = document.createElement('q');
+  q.innerHTML = "<img src='../photos/'+picture_adjectives[ran]　width=30　height=30>"; 
+  h6[1].after(q);
+  return ran;
 }
 var changeJapanese = function() {
   var rando = Math.floor(Math.random()*10);
@@ -39,7 +42,7 @@ let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn');
  
 
-question.addEventListener('click', changeEnglish, changePicture);
+question.addEventListener('click', changeEnglish);
 answer.addEventListener('click', changeJapanese);
 erase.addEventListener('click', removeText);
 
