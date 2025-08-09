@@ -4,7 +4,7 @@ let japanese_adjectives = ["TAKAI","HIKUI","ATSUI","USUI","OHKII","CHIISAI","OHI
 var h6 = document.getElementsByTagName('h6');
 
 var changeEnglish = function() {
-  var rand = Math.floor(Math.random()*10)+1;
+  var rand = Math.floor(Math.random()*10);
   var p = document.createElement('p');
   p.innerHTML = english_adjectives[rand]; 
   h6[0].after(p);
@@ -28,10 +28,10 @@ let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn')
  
 
-question.addEventListener('click', changeEnglish());
-answer.addEventListner('click', changeJapanese(changeEnglish());
-erase.addEventListener('click', removeText());
+question.addEventListener('click', changeEnglish);
+answer.addEventListner('click', changeJapanese(changeEnglish);
+erase.addEventListener('click', removeText);
 
-h6[0].addEventListener('click', changeEnglish());
-h6[1].addEventListener('click', changeJapanese(changeEnglish());
-h6[2].addEventListener('click', removeText());
+h6[0].addEventListener('click', changeEnglish);
+h6[1].addEventListener('click', changeJapanese(changeEnglish);
+h6[2].addEventListener('click', removeText);
