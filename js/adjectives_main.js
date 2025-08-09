@@ -29,11 +29,11 @@ let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn')
  
 
-question.addEventListener('click', changeEnglish());
+question.addEventListener('click', changeEnglish);
 answer.addEventListner('click', changeJapanese(changeEnglish()));
-erase.addEventListener('click', removeText());
+erase.addEventListener('click', removeText);
 
-h6[0].addEventListener('click', changeEnglish());
+h6[0].addEventListener('click', changeEnglish);
 h6[2].addEventListener('click', changeJapanese(changeEnglish()));
 
 console.log(rand)
