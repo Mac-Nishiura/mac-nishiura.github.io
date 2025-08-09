@@ -4,7 +4,7 @@ var japanese_adjectives = ['TAKAI','HIKUI','ATSUI','USUI','OHKII','CHIISAI','OHI
 var h6 = document.getElementsByTagName('h6');
 var rand;
 var changeEnglish = function() {
-  var rand = Math.floor(Math.random()*10);
+  rand = Math.floor(Math.random()*10);
   var p = document.createElement('p');
   var q = document.createElement('img');
   p.innerHTML = english_adjectives[rand];
