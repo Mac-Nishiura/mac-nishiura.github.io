@@ -13,7 +13,7 @@ var changeEnglish = function() {
 var changePicture = function() {
   var rand = Math.floor(Math.random()*10);
   var q = document.createElement('q');
-  q.innerHTML = "<img src=`../photos/${picture_adjectives[rand]}`>"; 
+  q.innerHTML = "<img src=`../photos/Picture1.jpg`>"; 
   h6[1].after(q);
   return rand;
 }
