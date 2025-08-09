@@ -34,5 +34,6 @@ answer.addEventListner('click', changeJapanese(changeEnglish());
 erase.addEventListener('click', removeText());
 
 h6[0].addEventListener('click', changeEnglish());
-h6[1].addEventListener('click', changeJapanese(changeEnglish());
-h6[2].addEventListener('click', removeText());
+h6[2].addEventListener('click', changeJapanese(changeEnglish());
+
+console.log(rand)
