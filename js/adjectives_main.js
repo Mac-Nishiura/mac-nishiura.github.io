@@ -10,11 +10,12 @@ var changeEnglish = function() {
   h6[0].after(p);
   return rand;
 }
-function changeJapane(num) {
+var changeJapane = function() {
+  var rando = Math.floor(Math.random()*10);
   var q = document.createElement('q');
-  q.innerHTML = japanese_adjectives[num]; 
+  q.innerHTML = japanese_adjectives[rando]; 
   h6[2].after(q);
-  return;
+  return rando;
 }
 var removeText = function () {
   const pp = document.querySelector('p');
@@ -30,10 +31,9 @@ let erase = document.getElementById('bbbtttnnn')
  
 
 question.addEventListener('click', changeEnglish);
-answer.addEventListner('click', changeJapanese(changeEnglish()));
+answer.addEventListner('click', changeJapanese);
 erase.addEventListener('click', removeText);
 
 h6[0].addEventListener('click', changeEnglish);
-h6[2].addEventListener('click', changeJapanese(changeEnglish()));
+h6[2].addEventListener('click', changeJapanese);
 
-console.log(rand)
