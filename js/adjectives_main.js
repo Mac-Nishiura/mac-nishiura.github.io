@@ -10,7 +10,7 @@ var changeEnglish = function() {
   h6[0].after(p);
   return rand;
 }
-var changeJapane = function() {
+var changeJapanese = function() {
   var rando = Math.floor(Math.random()*10);
   var q = document.createElement('q');
   q.innerHTML = japanese_adjectives[rando]; 
