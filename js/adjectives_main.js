@@ -3,7 +3,7 @@ var picture_adjectives = ['Picture1.jpg','Picture2.jpg','Picture3.jpg','Picture4
 var japanese_adjectives = ['TAKAI','HIKUI','ATSUI','USUI','OHKII','CHIISAI','OHI','SUKUNAI','ATARASHII','FURUI'];
 var h6 = document.getElementsByTagName('h6');
 
-var changeEnglish = function() {
+function changeEnglish() {
   rand = Math.floor(Math.random()*10);
   var p = document.createElement('p');
   var q = document.createElement('img');
@@ -14,13 +14,13 @@ var changeEnglish = function() {
   h6[1].after(q);
   return;
 }
-var changeJapanese = function() {
+function changeJapanese() {
   var r = document.createElement('r');
   r.innerHTML = japanese_adjectives[this.order]; 
   h6[3].after(r);
   return;
 }
-var removeText = function () {
+function removeText() {
   const pp = document.querySelector('p');
   const qq = document.querySelector('img');
   const rr = document.querySelector('r');
