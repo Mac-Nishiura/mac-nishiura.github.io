@@ -32,13 +32,13 @@ function removeText() {
 }
 
 let question = document.getElementById('btn');
-let answer = document.getElementById('bbttnn');
+
 let erase = document.getElementById('bbbtttnnn');
  
 
 question.addEventListener('click', changeEnglish);
-answer.addEventListener('click', {order: rand, handleEvent:changeJapanese});
+
 erase.addEventListener('click', removeText);
 
 h6[0].addEventListener('click', changeEnglish);
-h6[3].addEventListener('click', {order: rand, handleEvent:changeJapanese});
+
