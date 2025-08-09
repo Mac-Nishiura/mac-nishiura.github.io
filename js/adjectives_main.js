@@ -20,7 +20,8 @@ var removeText = function () {
   const pp = document.querySelector('p');
   const qq = document.querySelector('q');
   pp.remove();
-  qq.remove()
+  qq.remove();
+  return;
 }
 
 let question = document.getElementById('btn');
@@ -28,10 +29,10 @@ let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn')
  
 
-question.addEventListener('click', changeEnglish);
-answer.addEventListner('click', changeJapanese(changeEnglish);
-erase.addEventListener('click', removeText);
+question.addEventListener('click', changeEnglish());
+answer.addEventListner('click', changeJapanese(changeEnglish());
+erase.addEventListener('click', removeText());
 
-h6[0].addEventListener('click', changeEnglish);
-h6[1].addEventListener('click', changeJapanese(changeEnglish);
-h6[2].addEventListener('click', removeText);
+h6[0].addEventListener('click', changeEnglish());
+h6[1].addEventListener('click', changeJapanese(changeEnglish());
+h6[2].addEventListener('click', removeText());
