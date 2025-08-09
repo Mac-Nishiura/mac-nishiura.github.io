@@ -42,3 +42,4 @@ erase.addEventListener('click', removeText);
 h6[0].addEventListener('click', changeEnglish);
 h6[3].addEventListener('click', {order: rand, handleEvent:changeJapanese});
 
+console.log(rand)
