@@ -21,7 +21,7 @@ var changeJapanese = function() {
   var rando = Math.floor(Math.random()*10);
   var r = document.createElement('r');
   r.innerHTML = japanese_adjectives[rando]; 
-  h6[2].after(r);
+  h6[3].after(r);
   return rando;
 }
 var removeText = function () {
@@ -45,5 +45,5 @@ erase.addEventListener('click', removeText);
 
 h6[0].addEventListener('click', changeEnglish);
 h6[1].addEventListener('click', changePicture);
-h6[2].addEventListener('click', changeJapanese);
+h6[3].addEventListener('click', changeJapanese);
 
