@@ -27,7 +27,7 @@ var removeText = function () {
 
 let question = document.getElementById('btn');
 let answer = document.getElementById('bbttnn');
-let erase = document.getElementById('bbbtttnnn')
+let erase = document.getElementById('bbbtttnnn');
  
 
 question.addEventListener('click', changeEnglish);
