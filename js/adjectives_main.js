@@ -28,10 +28,10 @@ let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn')
  
 
-question.addEventListener('click', changeEnglish);
-answer.addEventListner('click', changeJapanese(rand));
-erase.addEventListener('click', removeText);
+question.addEventListener('click', changeEnglish());
+answer.addEventListner('click', changeJapanese(changeEnglish());
+erase.addEventListener('click', removeText());
 
-h6[0].addEventListener('click', changeEnglish);
+h6[0].addEventListener('click', changeEnglish());
 h6[1].addEventListener('click', changeJapanese(changeEnglish());
-h6[2].addEventListener('click', removeText);
+h6[2].addEventListener('click', removeText());
