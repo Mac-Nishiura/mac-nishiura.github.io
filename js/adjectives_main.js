@@ -31,7 +31,7 @@ var changeJapanese = function() {
 }
 var removeText = function () {
   const pp = document.querySelector('p');
-  const qq = document.querySelector('q');
+  const qq = document.querySelector('img');
   const rr = document.querySelector('r');
   pp.remove();
   qq.remove();
