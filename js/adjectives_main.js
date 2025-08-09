@@ -13,7 +13,7 @@ function changeEnglish() {
   h6[0].after(p);
   h6[1].after(q);
   setTimeout({order:rand, handleEvent:changeJapanese},3000)
-  return rand;
+  return;
 }
 function changeJapanese() {
   var r = document.createElement('r');
@@ -42,5 +42,3 @@ erase.addEventListener('click', removeText);
 
 h6[0].addEventListener('click', changeEnglish);
 h6[3].addEventListener('click', {order: rand, handleEvent:changeJapanese});
-
-console.log(rand)
