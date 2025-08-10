@@ -45,8 +45,8 @@ let erase = document.getElementById('bbbtttnnn');
  
 
 question.addEventListener('click', changeEnglish);
-answer.addEventListner('click', answerJapanese); 
+answer.addEventListener('click', answerJapanese); 
 erase.addEventListener('click', removeText);
 
 h6[0].addEventListener('click', changeEnglish);
-h6[3].addEventListner('click', answerJapanese);
+h6[3].addEventListener('click', answerJapanese);
