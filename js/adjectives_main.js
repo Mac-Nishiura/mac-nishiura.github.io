@@ -5,8 +5,9 @@ var h6 = document.getElementsByTagName('h6');
 
 function changeJapanese(num) {
   var r = document.createElement('r');
-  r.innerHTML = `<font color="WHITE">${japanese_adjectives[num]}</font>`; 
+  r.innerHTML = japanese_adjectives[num]; 
   h6[3].after(r);
+  r.style.color = 'white';
   return;
 }
 
