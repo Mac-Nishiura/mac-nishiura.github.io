@@ -24,9 +24,8 @@ function changeEnglish() {
 }
 
 function answerJapanese(){
-  var r = document.createElement('r');
-  r.innerHTML = `<font color="BLACK">this</font>`; 
-  h6[3].after(r);
+  const rrr = document.querySelector('r');
+  rrr.style.color = 'BLACK';
   return;
 }
   
