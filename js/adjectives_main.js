@@ -23,12 +23,11 @@ function changeEnglish() {
   return;
 }
 
-function answerJapanese(){
+function answerJapanese() {
   const rrr = document.querySelector('r');
-  rrr.style.color = 'BLACK';
+  rrr.style.color = "BLACK";
   return;
 }
-  
 
 function removeText() {
   const pp = document.querySelector('p');
