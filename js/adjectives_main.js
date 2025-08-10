@@ -23,6 +23,14 @@ function changeEnglish() {
   return;
 }
 
+function answerJapanese(){
+  var r = document.createElement('r');
+  r.innerHTML = `<font color="BLACK">this</font>`; 
+  h6[3].after(r);
+  return;
+}
+  
+
 function removeText() {
   const pp = document.querySelector('p');
   const qq = document.querySelector('img');
@@ -34,13 +42,13 @@ function removeText() {
 }
 
 let question = document.getElementById('btn');
-
+let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn');
  
 
 question.addEventListener('click', changeEnglish);
-
+answer.addEventListner('click', answerJapanese); 
 erase.addEventListener('click', removeText);
 
 h6[0].addEventListener('click', changeEnglish);
-
+h6[3].addEventListner('click', answerJapanese);
