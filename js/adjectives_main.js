@@ -1,6 +1,6 @@
-var english_adjectives = ['HIGH','LOW','THICK','THIN','BIG','SMALL','MUCH','LITTLE','NEW','OLD'];
-var picture_adjectives = ['Picture1.jpg','Picture2.jpg','Picture3.jpg','Picture4.jpg','Picture5.jpg','Picture6.jpg','Picture7.jpg','Picture8.jpg','Picture9.jpg','Picture10.jpg'];
-var japanese_adjectives = ['TAKAI','HIKUI','ATSUI','USUI','OHKII','CHIISAI','OHI','SUKUNAI','ATARASHII','FURUI'];
+var english_adjectives = ['HIGH','LOW','THICK','THIN','BIG','SMALL','MUCH','LITTLE','NEW','OLD','HOT','COOL','FAR','NEAR','BLUE','RED','YELLOW','BLACK','WHITE','SWEET','HOT','BITTER'];
+var picture_adjectives = ['Picture1.jpg','Picture2.jpg','Picture3.jpg','Picture4.jpg','Picture5.jpg','Picture6.jpg','Picture7.jpg','Picture8.jpg','Picture9.jpg','Picture10.jpg','Picture11.jpg','Picture12.jpg','Picture13.jpg','Picture14.jpg','Picture15.jpg','Picture16.jpg','Picture17.jpg','Picture18.jpg','Picture19.jpg','Picture20.jpg','Picture21.jpg','Picture22.jpg'];
+var japanese_adjectives = ['TAKAI','HIKUI','ATSUI','USUI','OHKII','CHIISAI','OHI','SUKUNAI','ATARASHII','FURUI','ATSUI','SUZUSHII','TOHI','CHIKAI','AOI','AKAI','KIIROI','KUROI','SHIROI','AMAI','KARAI','NIGAI'];
 var h6 = document.getElementsByTagName('h6');
 
 function changeJapanese(num) {
@@ -17,7 +17,7 @@ function changeEnglish() {
   var q = document.createElement('img');
   p.innerHTML = english_adjectives[rand];
   q.src = `../photos/${picture_adjectives[rand]}`;
-  q.width = 80; 
+  q.width = 100; 
   h6[0].after(p);
   h6[1].after(q);
   setTimeout(changeJapanese(rand),5000);
