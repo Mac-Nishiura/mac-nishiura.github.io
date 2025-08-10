@@ -25,7 +25,7 @@ function changeEnglish() {
 
 function answerJapanese() {
   const rrr = document.querySelector('r');
-  rrr.style.color = "BLACK";
+  rrr.style.color = 'blue';
   return;
 }
 
