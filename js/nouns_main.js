@@ -16,7 +16,7 @@ function changeEnglish() {
   var p = document.createElement('p');
   var q = document.createElement('img');
   p.innerHTML = english_nouns[rand];
-  q.src = `../photos/${picture_nouns[rand]}`;
+  q.src = `../photos3/${picture_nouns[rand]}`;
   q.width = 100; 
   h6[0].after(p);
   h6[1].after(q);
