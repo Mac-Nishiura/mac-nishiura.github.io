@@ -1,5 +1,5 @@
 var english_nouns = ['TELEVISION','RADIO','BANANA','APPLE','BEER','COFFEE','EGG','MILK','CHICKEN','FISH','STEW','BARBECUE','LETTUCE','POTATO','SEA','MOUNTAIN','MOSQUITO','GECKO','REFRIGERATOR','WASHING MACHINE'];
-var picture_nouns = ['Picture1.jpg','Picture2.jpg','Picture3.jpg','Picture4.jpg','Picture5.jpg','Picture6.jpg','Picture7.jpg','Picture8.jpg','Picture9.jpg','Picture10.jpg','Picture11.jpg','Picture12.jpg','Picture13.jpg','Picture14.jpg','Picture15.jpg','Picture16.jpg','Picture17.jpg','Picture18.jpg','Picture19.jpg','Picture20.jpg','Picture21.jpg','Picture22.jpg'];
+var picture_nouns = ['Picture1.png','Picture2.png','Picture3.png','Picture4.png','Picture5.png','Picture6.png','Picture7.png','Picture8.png','Picture9.png','Picture10.png','Picture11.png','Picture12.png','Picture13.png','Picture14.png','Picture15.png','Picture16.png','Picture17.png','Picture18.png','Picture19.png','Picture20.png'];
 var japanese_nouns = ['TEREBI','RAJIO','BANANA','RINGO','BIIRU','KOHII,'TAMAGO','GYUNYU','TORINIKU','SAKANA','SHICHU','BAHBEKYU','RETASU','JYAGAIMO,'UMI','YAMA','KA','YAMORI','REIZOKO','SENTAKKI'];
 var h6 = document.getElementsByTagName('h6');
 
