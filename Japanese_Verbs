@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+  <head>
+    <meta charset="utf-8">
+    <title>Japanese_Verbs</title>
+  </head>
+  <body>
+    <center>
+    <button type="button" id="btn">Question</button>
+    <h6><font color="red">English_Verbs</font></h6>
+    <h6><font color="red">Picture_Verbss</font></h6>
+    <h6> </h6>
+    <button type="button" id="bbttnn">Answer</button>
+    <h6><font color="red">Japanese_Verbs</font></h6>
+    <h6> </h6>
+    <button type="button" id="bbbtttnnn">Erase</button>
+    <script src="/js/verbs_main.js"></script>
+    </center>
+  </body>
