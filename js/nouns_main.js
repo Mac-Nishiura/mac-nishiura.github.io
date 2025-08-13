@@ -1,6 +1,6 @@
-var english_nouns = ['TELEVISION','RADIO','BANANA','APPLE','BEER','COFFEE','EGG','MILK','CHICKEN','FISH','STEW','BARBECUE','LETTUCE','POTATO','SEA','MOUNTAIN','MOSQUITO','GECKO','REFRIGERATOR','WASHING MACHINE'];
-var picture_nouns = ['Picture1.png','Picture2.png','Picture3.png','Picture4.png','Picture5.png','Picture6.png','Picture7.png','Picture8.png','Picture9.png','Picture10.png','Picture11.png','Picture12.png','Picture13.png','Picture14.png','Picture15.png','Picture16.png','Picture17.png','Picture18.png','Picture19.png','Picture20.png'];
-var japanese_nouns = ['TEREBI','RAJIO','BANANA','RINGO','BIIRU','KOHII','TAMAGO','GYUNYU','TORINIKU','SAKANA','SHICHU','BAHBEKYU','RETASU','JYAGAIMO','UMI','YAMA','KA','YAMORI','REIZOKO','SENTAKKI'];
+var english_nouns = ['TELEVISION','RADIO','BANANA','APPLE','BEER','COFFEE','EGG','MILK','CHICKEN','FISH','STEW','BARBECUE','LETTUCE','POTATO','SEA','MOUNTAIN','MOSQUITO','GECKO','REFRIGERATOR','WASHING MACHINE','DOG','CAT','CAR','SHIP'];
+var picture_nouns = ['Picture1.png','Picture2.png','Picture3.png','Picture4.png','Picture5.png','Picture6.png','Picture7.png','Picture8.png','Picture9.png','Picture10.png','Picture11.png','Picture12.png','Picture13.png','Picture14.png','Picture15.png','Picture16.png','Picture17.png','Picture18.png','Picture19.png','Picture20.png','Picture21.png','Picture22.png','Picture23.png','Picture24.png'];
+var japanese_nouns = ['TEREBI','RAJIO','BANANA','RINGO','BIIRU','KOHII','TAMAGO','GYUNYU','TORINIKU','SAKANA','SHICHU','BAHBEKYU','RETASU','JYAGAIMO','UMI','YAMA','KA','YAMORI','REIZOKO','SENTAKKI','INU','NEKO','KURUMA','FUNE'];
 var h6 = document.getElementsByTagName('h6');
 
 function changeJapanese(num) {
