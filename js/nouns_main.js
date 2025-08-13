@@ -12,7 +12,7 @@ function changeJapanese(num) {
 }
 
 function changeEnglish() {
-  rand = Math.floor(Math.random()*20);
+  rand = Math.floor(Math.random()*24);
   var p = document.createElement('p');
   var q = document.createElement('img');
   p.innerHTML = english_nouns[rand];
