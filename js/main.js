@@ -1,4 +1,5 @@
 var h6 = document.getElementsByTagName('h6');
+
 var changeText = function () {
   var p = document.createElement('p');
   var q = document.createElement('q');
@@ -12,17 +13,26 @@ var changeText = function () {
   q.style.color = "white";
   return
 }
+
 var answerText = function () {
   const qqq = document.querySelector('q');
   qqq.style.color = "red";
   return
 }
+
 var removeText = function () {
   const pp = document.querySelector('p');
   const qq = document.querySelector('q');
   pp.remove();
   qq.remove()
 }
+
+function playAudio() {
+  const audio = document.getElementById('my-audio');
+  audio.play();
+}
+
+platAudio
 
 let question = document.getElementById('btn');
 let answer = document.getElementById('bbbtttnnn');
