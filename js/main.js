@@ -27,13 +27,6 @@ var removeText = function () {
   qq.remove()
 }
 
-function playAudio() {
-  const audio = document.getElementById('my-audio');
-  audio.play();
-}
-
-platAudio
-
 let question = document.getElementById('btn');
 let answer = document.getElementById('bbbtttnnn');
 let erase = document.getElementById('bbttnn');
