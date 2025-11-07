@@ -14,7 +14,7 @@ var changeText = function () {
 }
 var answerText = function () {
   const qqq = document.querySelector('q');
-  qqq.style.color = "black";
+  qqq.style.color = "red";
   return
 }
 var removeText = function () {
