@@ -13,8 +13,8 @@ var changeText = function () {
   return
 }
 var answerText = function () {
-  const rrr = document.querySelector('q');
-  q.style.color = "blue";
+  const qqq = document.querySelector('q');
+  qqq.style.color = "blue";
   return
 }
 var removeText = function () {
