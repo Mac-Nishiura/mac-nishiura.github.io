@@ -1,15 +1,25 @@
 var h6 = document.getElementsByTagName('h6');
+
 var changeText = function () {
   var p = document.createElement('p');
   var q = document.createElement('q');
-  var random_1 = Math.floor(Math.random()*25);
-  var random_2 = Math.floor(Math.random()*25);
-  var random_3 = Math.floor(Math.random()*3);
-  p.innerHTML = random_1+" + "+random_2;
-  q.innerHTML = random_1+random_2+random_3; 
+  var random_1 = Math.floor(Math.random()*99+1);
+  var random_2 = Math.floor(Math.random()*9+1);
+  /*var random_3 = Math.floor(Math.random()*9+1);*/
+  p.innerHTML = random_1+" - "+random_2;
+  q.innerHTML = random_1-random_2; 
   h6[0].after(p);
-  h6[1].after(q)
+  h6[1].after(q);
+  q.style.color = "white";
+  return
 }
+
+var answerText = function () {
+  const qqq = document.querySelector('q');
+  qqq.style.color = "red";
+  return
+}
+
 var removeText = function () {
   const pp = document.querySelector('p');
   const qq = document.querySelector('q');
@@ -17,10 +27,12 @@ var removeText = function () {
   qq.remove()
 }
 
-let quest = document.getElementById('btn');
+let question = document.getElementById('btn');
+let answer = document.getElementById('bbbtttnnn');
 let erase = document.getElementById('bbttnn');
 
-quest.addEventListener('click', changeText);
+question.addEventListener('click', changeText);
+answer.addEventListener('click', answerText);
 erase.addEventListener('click', removeText);
 
 h6[0].addEventListener('click', changeText);
