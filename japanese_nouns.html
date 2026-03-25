@@ -2,17 +2,42 @@
   <head>
     <meta charset="utf-8">
     <title>Japanese_Nouns</title>
+    <style>
+        body {
+          margin: 0;
+        }
+        .container {
+          display: flex;
+          height: 100vh; /* 画面全体の高さ */
+        }
+        .left {
+          width: 50%;
+          background-color: white;
+        }
+        .right {
+          width: 50%;
+          background-color: white;
+        }
+    </style>
   </head>
   <body>
-    <center>
-    <button type="button" id="btn">Question</button>
-    <h6><font color="red">English_Nouns</font></h6>
-    <h6><font color="red">Picture_Nouns</font></h6>
-    <h6> </h6>
-    <button type="button" id="bbttnn">Answer</button>
-    <h6><font color="red">Japanese_Nouns</font></h6>
-    <h6> </h6>
-    <button type="button" id="bbbtttnnn">Erase</button>
-    <script src="/js/nouns_main.js"></script>
-    </center>
+    <div class="container">
+      <div class="left">
+        <center>
+        <button type="button" id="btn">Question</button>
+        <h6><font color="red">English_Nouns</font></h6>
+        <h6><font color="red">Picture_Nouns</font></h6>
+        <h6> </h6>
+        </center>
+      </div>
+      <div class="right">
+        <center>    
+        <button type="button" id="bbttnn">Answer</button>
+        <h6><font color="red">Japanese_Nouns</font></h6>
+        <h6> </h6>
+        <button type="button" id="bbbtttnnn">Erase</button>
+        <script src="/js/nouns_main.js"></script>
+        </center>
+      </div>
+    </div>   
   </body>
