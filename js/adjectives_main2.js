@@ -1,12 +1,12 @@
 var english_adjectives = ['Tasty','CHEERFUL','HAPPY','SAD','FUN','SLEEPY','BRIGT','DARK','FAST','SLOW','EARLY','LATE','STRONG','WEAK','SHALLOW','DEEP','FAT','SKINNY','GOOD AT','BAD AT','EASY','DIFFICULT','HOT','COLD','CLEAN','DIRTY','SAFE','DANGEROUS'];
 var picture_adjectives = ['Picture23.jpg','Picture24.jpg','Picture25.jpg','Picture26.jpg','Picture27.jpg','Picture28.jpg','Picture29.jpg','Picture30.jpg','Picture31.jpg','Picture32.jpg','Picture33.jpg','Picture34.jpg','Picture35.jpg','Picture36.jpg','Picture37.jpg','Picture38.jpg','Picture39.jpg','Picture40.jpg','Picture41.jpg','Picture42.jpg','Picture43.jpg','Picture44.jpg','Picture45.jpg','Picture46.jpg','Picture47.jpg','Picture48.jpg','Picture49.jpg','Picture50.jpg'];
 var japanese_adjectives = ['OISHII','AKARUI','URESHII','KANASHII','TANOSHII','NEMUI','AKARUI','KURAI','HAYAI','OSOI','HAYAI','OSOI','TSUYOI','YOWAI','ASAI','FUKAI','FUTOI','HOSOI','UMAI','HETANA','YASASHII','MUTSUKASHII','ATSUI','TSUMETAI','KIREINA','KITANAI','ANZENNA','KIKENNA'];
-var h3 = document.getElementsByTagName('h3');
+var h2 = document.getElementsByTagName('h2');
 
 function changeJapanese(num) {
   var r = document.createElement('r');
   r.innerHTML = japanese_adjectives[num]; 
-  h3[3].after(r);
+  h2[3].after(r);
   r.style.color = 'white';
   return;
 }
@@ -18,8 +18,8 @@ function changeEnglish() {
   p.innerHTML = english_adjectives[rand];
   q.src = `../photo/${picture_adjectives[rand]}`;
   q.width = 100; 
-  h3[0].after(p);
-  h3[1].after(q);
+  h2[0].after(p);
+  h2[1].after(q);
   setTimeout(changeJapanese(rand),5000);
   return;
 }
@@ -49,5 +49,5 @@ question.addEventListener('click', changeEnglish);
 answer.addEventListener('click', answerJapanese); 
 erase.addEventListener('click', removeText);
 
-h3[0].addEventListener('click', changeEnglish);
-h3[3].addEventListener('click', answerJapanese);
+h2[0].addEventListener('click', changeEnglish);
+h2[3].addEventListener('click', answerJapanese);
