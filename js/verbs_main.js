@@ -1,12 +1,12 @@
 var english_verbs = ['WALK','RUN','EAT','DRINK','WRITE','READ','LISTEN','SPEAK','LOOK','SING','DANCE','SLEEP','WAKE UP','CLEAN','WASH','SWIM','KICK','THROW','HIT','LAUGH'];
 var picture_verbs = ['Picture1.png','Picture2.png','Picture3.png','Picture4.png','Picture5.png','Picture6.png','Picture7.png','Picture8.png','Picture9.png','Picture10.png','Picture11.png','Picture12.png','Picture13.png','Picture14.png','Picture15.png','Picture16.png','Picture17.png','Picture18.png','Picture19.png','Picture20.png'];
 var japanese_verbs = ['ARUKU','HASHIRU','TABERU','NOMU','KAKU','YOMU','KIKU','HANASU','MIRU','UTAU','ODORU','NERU','OKIRU','SOHJISURU','SENTAKUSURU','OYOGU','KERU','NAGERU','UTSU','WARAU'];
-var h3 = document.getElementsByTagName('h3');
+var h2 = document.getElementsByTagName('h2');
 
 function changeJapanese(num) {
   var r = document.createElement('r');
   r.innerHTML = japanese_verbs[num]; 
-  h3[3].after(r);
+  h2[3].after(r);
   r.style.color = 'white';
   return;
 }
@@ -18,8 +18,8 @@ function changeEnglish() {
   p.innerHTML = english_verbs[rand];
   q.src = `../photos2/${picture_verbs[rand]}`;
   q.width = 100; 
-  h3[0].after(p);
-  h3[1].after(q);
+  h2[0].after(p);
+  h2[1].after(q);
   setTimeout(changeJapanese(rand),5000);
   return;
 }
@@ -49,5 +49,5 @@ question.addEventListener('click', changeEnglish);
 answer.addEventListener('click', answerJapanese); 
 erase.addEventListener('click', removeText);
 
-h3[0].addEventListener('click', changeEnglish);
-h3[3].addEventListener('click', answerJapanese);
+h2[0].addEventListener('click', changeEnglish);
+h2[3].addEventListener('click', answerJapanese);
