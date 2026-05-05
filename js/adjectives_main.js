@@ -24,16 +24,15 @@ function changeEnglish(flag) {
     setTimeout(changeJapanese(rand),5000);
   }
   else {
-    for (let i=0; i<22; i++) {
-      var p = document.createElement('p');
-      var q = document.createElement('img');
-      p.innerHTML = english_adjectives[i];
-      q.src = `../photos/${picture_adjectives[i]}`;
-      q.width = 100; 
-      h2[0].after(p);
-      h2[1].after(q);
-      setTimeout(changeJapanese(1),5000);
-    }
+    var p = document.createElement('p');
+    var q = document.createElement('img');
+    p.innerHTML = english_adjectives[i];
+    q.src = `../photos/${picture_adjectives[i]}`;
+    q.width = 100; 
+    h2[0].after(p);
+    h2[1].after(q);
+    setTimeout(changeJapanese(i),5000);
+    i++;
   }  
   return;
 }
@@ -59,7 +58,8 @@ function initialize() {
   return;
 }
 
-var flag
+let i=0;
+let flag=0;
 
 let practice = document.getElementById('000');
 let question = document.getElementById('btn');
