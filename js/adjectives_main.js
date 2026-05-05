@@ -54,7 +54,7 @@ function removeText() {
 }
 
 function initialize() {
-  flag = 1;
+  flag = 1-flag;
   return;
 }
 
