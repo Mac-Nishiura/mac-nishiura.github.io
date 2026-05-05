@@ -62,8 +62,8 @@ function initialize() {
   return;
 }
 
-let i=0;
-let flag=0;
+var i=0;
+var flag=0;
 
 let practice = document.getElementById('000');
 let question = document.getElementById('btn');
