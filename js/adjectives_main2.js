@@ -4,7 +4,6 @@ var japanese_adjectives = ['OISHII','AKARUI','URESHII','KANASHII','TANOSHII','NE
 var h2 = document.getElementsByTagName('h2');
 
 function changeJapanese(num) {
-  var r = document.createElement('r');
   r.innerHTML = japanese_adjectives[num]; 
   h2[3].after(r);
   r.style.color = 'white';
@@ -12,15 +11,23 @@ function changeJapanese(num) {
 }
 
 function changeEnglish() {
-  rand = Math.floor(Math.random()*28);
-  var p = document.createElement('p');
-  var q = document.createElement('img');
-  p.innerHTML = english_adjectives[rand];
-  q.src = `../photo/${picture_adjectives[rand]}`;
-  q.width = 100; 
-  h2[0].after(p);
-  h2[1].after(q);
-  setTimeout(changeJapanese(rand),5000);
+  if (flag == 1) {
+    rand = Math.floor(Math.random()*28);
+    p.innerHTML = english_adjectives[rand];
+    q.src = `../photo/${picture_adjectives[rand]}`;
+    q.width = 100; 
+    h2[0].after(p);
+    h2[1].after(q);
+    setTimeout(changeJapanese(rand),5000);
+  } else {
+    p.innerHTML = english_adjectives[i];
+    q.src = `../photo/${picture_adjectives[i]}`;
+    q.width = 100; 
+    h2[0].after(p);
+    h2[1].after(q);
+    setTimeout(changeJapanese(i),5000);
+    i++;
+  }
   return;
 }
 
@@ -40,11 +47,29 @@ function removeText() {
   return;
 }
 
+function initialize() {
+  flag = 1-flag;
+  if (flag == 1) {
+    practice.style.backgroundColor = "red";
+  } else {
+    practice.style.backgroundColor = "green";
+  }
+  return;
+}
+
+var i = 0;
+var flag = 0;
+var p = document.createElement('p');
+var q = document.createElement('img');
+var r = document.createElement('r');
+
+let practice = document.getElementById('000');
 let question = document.getElementById('btn');
 let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn');
+practice.style.backgroundColor = "green";
  
-
+practice.addEventListener('click', initialize);
 question.addEventListener('click', changeEnglish);
 answer.addEventListener('click', answerJapanese); 
 erase.addEventListener('click', removeText);
