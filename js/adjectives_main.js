@@ -4,7 +4,7 @@ var japanese_adjectives = ['TAKAI','HIKUI','ATSUI','USUI','OHKII','CHIISAI','OHI
 var h2 = document.getElementsByTagName('h2');
 
 function changeJapanese(num) {
-  var r = document.createElement('r');
+  //var r = document.createElement('r');
   r.innerHTML = japanese_adjectives[num]; 
   h2[3].after(r);
   r.style.color = 'white';
@@ -73,6 +73,7 @@ let practice = document.getElementById('000');
 let question = document.getElementById('btn');
 let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn');
+practice.style.backgroundColor = "green";
  
 practice.addEventListener('click', initialize);
 question.addEventListener('click', changeEnglish);
