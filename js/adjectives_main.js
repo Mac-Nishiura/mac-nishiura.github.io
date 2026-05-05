@@ -52,7 +52,7 @@ function removeText() {
   return;
 }
 
-function initialize() {
+/*function initialize() {
   flag = 1-flag;
   return;
 }
@@ -60,12 +60,12 @@ function initialize() {
 var i=0;
 var flag=0;
 
-let practice = document.getElementById('000');
+let practice = document.getElementById('000');*/
 let question = document.getElementById('btn');
 let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn');
  
-practice.addEventListener('click', initialize);
+//practice.addEventListener('click', initialize);
 question.addEventListener('click', changeEnglish);
 answer.addEventListener('click', answerJapanese); 
 erase.addEventListener('click', removeText);
