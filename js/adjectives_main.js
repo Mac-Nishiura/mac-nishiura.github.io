@@ -12,7 +12,7 @@ function changeJapanese(num) {
 }
 
 function changeEnglish(flag) {
-  if (flag == 1) {
+  if (flag = 1) {
     rand = Math.floor(Math.random()*22);
     var p = document.createElement('p');
     var q = document.createElement('img');
