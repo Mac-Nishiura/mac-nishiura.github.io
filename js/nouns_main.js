@@ -4,7 +4,6 @@ var japanese_nouns = ['TEREBI','RAJIO','BANANA','RINGO','BIIRU','KOHII','TAMAGO'
 var h2 = document.getElementsByTagName('h2');
 
 function changeJapanese(num) {
-  var r = document.createElement('r');
   r.innerHTML = japanese_nouns[num]; 
   h2[3].after(r);
   r.style.color = 'white';
@@ -12,15 +11,22 @@ function changeJapanese(num) {
 }
 
 function changeEnglish() {
-  rand = Math.floor(Math.random()*24);
-  var p = document.createElement('p');
-  var q = document.createElement('img');
-  p.innerHTML = english_nouns[rand];
-  q.src = `../photos3/${picture_nouns[rand]}`;
-  q.width = 100; 
-  h2[0].after(p);
-  h2[1].after(q);
-  setTimeout(changeJapanese(rand),5000);
+  if (flag == 1) {
+    rand = Math.floor(Math.random()*24);
+    p.innerHTML = english_nouns[rand];
+    q.src = `../photos3/${picture_nouns[rand]}`;
+    q.width = 100; 
+    h2[0].after(p);
+    h2[1].after(q);
+    setTimeout(changeJapanese(rand),5000);
+  } else {
+    p.innerHTML = english_nouns[i];
+    q.src = `../photos3/${picture_nouns[i]}`;
+    q.width = 100; 
+    h2[0].after(p);
+    h2[1].after(q);
+    setTimeout(changeJapanese(rand),5000);
+  }
   return;
 }
 
@@ -40,11 +46,29 @@ function removeText() {
   return;
 }
 
+function initialize() {
+  flag = 1-flag;
+  if (flag == 1) {
+    practice.style.backgroundColor = "red";
+  } else {
+    practice.style.backgroundColor = "green";
+  }
+  return;
+}
+
+var i = 0;
+var flag = 0;
+var p = document.createElement('p');
+var q = document.createElement('img');
+var r = document.createElement('r');
+
+let practice = document.getElementById('000');
 let question = document.getElementById('btn');
 let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn');
- 
+practice.style.backgroundColor = "green"; 
 
+practice.addEventListener('click', initialize);
 question.addEventListener('click', changeEnglish);
 answer.addEventListener('click', answerJapanese); 
 erase.addEventListener('click', removeText);
