@@ -11,16 +11,30 @@ function changeJapanese(num) {
   return;
 }
 
-function changeEnglish() {
-  rand = Math.floor(Math.random()*22);
-  var p = document.createElement('p');
-  var q = document.createElement('img');
-  p.innerHTML = english_adjectives[rand];
-  q.src = `../photos/${picture_adjectives[rand]}`;
-  q.width = 100; 
-  h2[0].after(p);
-  h2[1].after(q);
-  setTimeout(changeJapanese(rand),5000);
+function changeEnglish(flag) {
+  if (flag == 1) {
+    rand = Math.floor(Math.random()*22);
+    var p = document.createElement('p');
+    var q = document.createElement('img');
+    p.innerHTML = english_adjectives[rand];
+    q.src = `../photos/${picture_adjectives[rand]}`;
+    q.width = 100; 
+    h2[0].after(p);
+    h2[1].after(q);
+    setTimeout(changeJapanese(rand),5000);
+  }
+  else {
+    for (let i=0; i<22; i++) {
+      var p = document.createElement('p');
+      var q = document.createElement('img');
+      p.innerHTML = english_adjectives[i];
+      q.src = `../photos/${picture_adjectives[i]}`;
+      q.width = 100; 
+      h2[0].after(p);
+      h2[1].after(q);
+      setTimeout(changeJapanese(1),5000);
+    }
+  }  
   return;
 }
 
@@ -40,11 +54,19 @@ function removeText() {
   return;
 }
 
+function initialize() {
+  flag = 1;
+  return;
+}
+
+var flag
+
+let practice = document.getElementById('000');
 let question = document.getElementById('btn');
 let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn');
  
-
+practice.addEventListener('click', initialize);
 question.addEventListener('click', changeEnglish);
 answer.addEventListener('click', answerJapanese); 
 erase.addEventListener('click', removeText);
