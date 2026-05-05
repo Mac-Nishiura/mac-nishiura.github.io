@@ -14,8 +14,8 @@ function changeJapanese(num) {
 function changeEnglish() {
   if (flag == 1) {
     rand = Math.floor(Math.random()*22);
-    var p = document.createElement('p');
-    var q = document.createElement('img');
+    /*var p = document.createElement('p');
+    var q = document.createElement('img');*/
     p.innerHTML = english_adjectives[rand];
     q.src = `../photos/${picture_adjectives[rand]}`;
     q.width = 100; 
@@ -64,6 +64,10 @@ function initialize() {
 
 var i=0;
 var flag=0;
+
+var p = document.createElement('p');
+var q = document.createElement('img');
+var r = document.createElement('r');
 
 let practice = document.getElementById('000');
 let question = document.getElementById('btn');
