@@ -12,7 +12,7 @@ function changeJapanese(num) {
 }
 
 function changeEnglish() {
-  if (flag == 1) {
+  //if (flag == 1) {
     rand = Math.floor(Math.random()*22);
     var p = document.createElement('p');
     var q = document.createElement('img');
@@ -22,7 +22,7 @@ function changeEnglish() {
     h2[0].after(p);
     h2[1].after(q);
     setTimeout(changeJapanese(rand),5000);
-  } else {
+  /*} else {
     var p = document.createElement('p');
     var q = document.createElement('img');
     p.innerHTML = english_adjectives[i];
@@ -32,7 +32,7 @@ function changeEnglish() {
     h2[1].after(q);
     setTimeout(changeJapanese(i),5000);
     i++;
-  }  
+  } */ 
   return;
 }
 
