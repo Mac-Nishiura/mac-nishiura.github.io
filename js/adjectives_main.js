@@ -55,9 +55,9 @@ function removeText() {
 function initialize() {
   flag = 1-flag;
   if (flag == 1) {
-    practice.style.color = "red":
+    practice.style.color = 'red':
   } else {
-    practice.style.color = "black";
+    practice.style.color = 'black';
   }
   return;
 }
