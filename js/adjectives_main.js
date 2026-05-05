@@ -12,7 +12,7 @@ function changeJapanese(num) {
 }
 
 function changeEnglish() {
-  //if (flag == 1) {
+  if (flag == 1) {
     rand = Math.floor(Math.random()*22);
     var p = document.createElement('p');
     var q = document.createElement('img');
@@ -22,9 +22,9 @@ function changeEnglish() {
     h2[0].after(p);
     h2[1].after(q);
     setTimeout(changeJapanese(rand),5000);
-  /*} else {
-    var p = document.createElement('p');
-    var q = document.createElement('img');
+  } else {
+    /*var p = document.createElement('p');
+    var q = document.createElement('img');*/
     p.innerHTML = english_adjectives[i];
     q.src = `../photos/${picture_adjectives[i]}`;
     q.width = 100; 
@@ -32,7 +32,7 @@ function changeEnglish() {
     h2[1].after(q);
     setTimeout(changeJapanese(i),5000);
     i++;
-  } */ 
+  }  
   return;
 }
 
@@ -52,15 +52,20 @@ function removeText() {
   return;
 }
 
-/*function initialize() {
+function initialize() {
   flag = 1-flag;
+  if (flag == 1) {
+    practice.style.backgroundColor = "red";
+  } else {
+    practice.style.backgroundColor = "green";
+  }
   return;
 }
 
 var i=0;
 var flag=0;
 
-let practice = document.getElementById('000');*/
+let practice = document.getElementById('000');
 let question = document.getElementById('btn');
 let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn');
