@@ -74,7 +74,7 @@ let question = document.getElementById('btn');
 let answer = document.getElementById('bbttnn');
 let erase = document.getElementById('bbbtttnnn');
  
-//practice.addEventListener('click', initialize);
+practice.addEventListener('click', initialize);
 question.addEventListener('click', changeEnglish);
 answer.addEventListener('click', answerJapanese); 
 erase.addEventListener('click', removeText);
