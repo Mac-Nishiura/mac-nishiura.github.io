@@ -54,11 +54,6 @@ function removeText() {
 
 function initialize() {
   flag = 1-flag;
-  if (flag == 1) {
-    practice.style.backgroundColor = "red":
-  } else {
-    practice.style.backgroundColor = "green";
-  }
   return;
 }
 
