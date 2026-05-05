@@ -26,6 +26,7 @@ function changeEnglish() {
     h2[0].after(p);
     h2[1].after(q);
     setTimeout(changeJapanese(rand),5000);
+    i++;
   }
   return;
 }
