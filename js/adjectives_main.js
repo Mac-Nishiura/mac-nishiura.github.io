@@ -11,7 +11,7 @@ function changeJapanese(num) {
   return;
 }
 
-function changeEnglish(flag) {
+function changeEnglish() {
   if (flag = 1) {
     rand = Math.floor(Math.random()*22);
     var p = document.createElement('p');
