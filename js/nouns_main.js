@@ -5,7 +5,7 @@ var h2 = document.getElementsByTagName('h2');
 
 function changeJapanese(num) {
   r.innerHTML = japanese_nouns[num]; 
-  h2[3].after(r);
+  h1[3].after(r);
   r.style.color = 'white';
   return;
 }
@@ -16,15 +16,15 @@ function changeEnglish() {
     p.innerHTML = english_nouns[rand];
     q.src = `../photos3/${picture_nouns[rand]}`;
     q.width = 100; 
-    h2[0].after(p);
-    h2[1].after(q);
+    h1[0].after(p);
+    h1[1].after(q);
     setTimeout(changeJapanese(rand),5000);
   } else {
     p.innerHTML = english_nouns[i];
     q.src = `../photos3/${picture_nouns[i]}`;
     q.width = 100; 
-    h2[0].after(p);
-    h2[1].after(q);
+    h1[0].after(p);
+    h1[1].after(q);
     setTimeout(changeJapanese(i),5000);
     i++;
   }
@@ -74,5 +74,5 @@ question.addEventListener('click', changeEnglish);
 answer.addEventListener('click', answerJapanese); 
 erase.addEventListener('click', removeText);
 
-h2[0].addEventListener('click', changeEnglish);
-h2[3].addEventListener('click', answerJapanese);
+h1[0].addEventListener('click', changeEnglish);
+h1[3].addEventListener('click', answerJapanese);
