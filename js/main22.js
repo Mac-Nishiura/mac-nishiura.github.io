@@ -6,7 +6,7 @@ var changeText = function () {
   var random_1 = Math.floor(Math.random()*99+1);
   var random_2 = Math.floor(Math.random()*99+1);
   /*var random_3 = Math.floor(Math.random()*9+1);*/
-  if (random_1-random2)<0 {
+  if (random_1-random_2<0) {
     p.innerHTML = random_2+" - "+random_1;
     q.innerHTML = random_2-random_1; 
   } else {
