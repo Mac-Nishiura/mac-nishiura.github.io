@@ -1,4 +1,4 @@
-var h2 = document.getElementsByTagName('h2');
+var h6 = document.getElementsByTagName('h6');
 
 var changeText = function () {
   var p = document.createElement('p');
@@ -8,8 +8,8 @@ var changeText = function () {
   /*var random_3 = Math.floor(Math.random()*3);*/
   p.innerHTML = random_1+" X "+random_2;
   q.innerHTML = random_1*random_2; 
-  h2[0].after(p);
-  h2[1].after(q);
+  h6[0].after(p);
+  h6[1].after(q);
   q.style.color = "white";
   return
 }
@@ -35,5 +35,5 @@ question.addEventListener('click', changeText);
 answer.addEventListener('click', answerText);
 erase.addEventListener('click', removeText);
 
-h2[0].addEventListener('click', changeText);
-h2[1].addEventListener('click', removeText);
+h6[0].addEventListener('click', changeText);
+h6[1].addEventListener('click', removeText);
