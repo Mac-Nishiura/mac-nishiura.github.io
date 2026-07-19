@@ -9,7 +9,7 @@ var changeText = function () {
   p.innerHTML = random_1+" + "+random_2;
   q.innerHTML = random_1+random_2; 
   h6[0].after(p);
-  p.style.fontSize = "2em";
+  p.style.fontSize = "60px";
   h6[1].after(q);
   q.style.color = "white";
   return
