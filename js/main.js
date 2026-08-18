@@ -11,6 +11,7 @@ var changeText = function () {
   h3[0].after(p);
   p.style.fontSize = "100px";
   h3[1].after(q);
+  q.style.fontSize = "100px";
   q.style.color = "white";
   return
 }
