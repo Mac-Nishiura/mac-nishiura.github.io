@@ -1,0 +1,20 @@
+<h2>1～6の乱数を1000回発生</h2>
+
+<div id="result"></div>
+
+<script>
+    let result = "";
+
+    for (let i = 1; i <= 1000; i++) {
+        // 1～6の整数をランダムに発生
+        let randomNumber = Math.floor(Math.random() * 6) + 1;
+
+        result += i + ": " + randomNumber + "<br>";
+    }
+
+    // HTML上に表示
+    document.getElementById("result").innerHTML = result;
+</script>
+
+</body>
+</html>
