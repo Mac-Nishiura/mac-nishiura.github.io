@@ -1,18 +1,36 @@
-<h2>1～6の乱数を1000回発生</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Simulation</title>
+</head>
+<body>
+
+<h2>サイコロを1000回振る実験</h2>
 
 <div id="result"></div>
 
 <script>
-    let result = "";
+    // 1～6の出現回数を保存する配列
+    let count = [0, 0, 0, 0, 0, 0];
 
-    for (let i = 1; i <= 1000; i++) {
+    // サイコロを1000回振る
+    for (let i = 0; i < 1000; i++) {
+
         // 1～6の整数をランダムに発生
-        let randomNumber = Math.floor(Math.random() * 6) + 1;
+        let dice = Math.floor(Math.random() * 6) + 1;
 
-        result += i + ": " + randomNumber + "<br>";
+        // 出現した目の回数を1増やす
+        count[dice - 1]++;
     }
 
-    // HTML上に表示
+    // 結果をHTMLに表示
+    let result = "";
+
+    for (let i = 0; i < 6; i++) {
+        result += (i + 1) + " → " + count[i] + "回<br>";
+    }
+
     document.getElementById("result").innerHTML = result;
 </script>
 
