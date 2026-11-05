@@ -1,17 +1,21 @@
 
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3元1次連立方程式の解</title>
+
+<title>System of Three Linear Equations</title>
 
 <style>
+
 body {
     font-family: Arial, sans-serif;
     margin: 30px;
     background: #f4f6f8;
 }
+
 .container {
     max-width: 650px;
     margin: auto;
@@ -20,10 +24,12 @@ body {
     border-radius: 12px;
     box-shadow: 0 2px 10px #ccc;
 }
+
 h2 {
     text-align: center;
     color: #234;
 }
+
 .equation {
     display: flex;
     align-items: center;
@@ -31,12 +37,14 @@ h2 {
     margin: 15px 0;
     flex-wrap: wrap;
 }
+
 input {
     width: 65px;
     padding: 8px;
     font-size: 16px;
     text-align: center;
 }
+
 button {
     padding: 10px 25px;
     font-size: 16px;
@@ -47,15 +55,18 @@ button {
     background: #1769aa;
     color: white;
 }
+
 button:hover {
     background: #0d4775;
 }
+
 #result {
     margin-top: 20px;
     padding: 15px;
     background: #eef5ff;
     line-height: 1.8;
 }
+
 </style>
 </head>
 
@@ -63,9 +74,9 @@ button:hover {
 
 <div class="container">
 
-<h2>3元1次連立方程式</h2>
+<h2>System of Three Linear Equations</h2>
 
-<p>係数と定数を入力してください。</p>
+<p>Enter the coefficients and constants.</p>
 
 <div id="inputs">
 
@@ -92,27 +103,33 @@ button:hover {
 
 </div>
 
-<button onclick="solve()">解を求める</button>
-<button onclick="resetValues()">リセット</button>
+<button onclick="solve()">Solve</button>
+
+<button onclick="resetValues()">Reset</button>
 
 <div id="result">
-ここに計算結果が表示されます。
+The results will be displayed here.
 </div>
 
 </div>
 
 <script>
 
-// 3次の行列式
+// Calculate the determinant of a 3 x 3 matrix
+
 function det(A) {
+
     return (
         A[0][0] * (A[1][1]*A[2][2] - A[1][2]*A[2][1])
       - A[0][1] * (A[1][0]*A[2][2] - A[1][2]*A[2][0])
       + A[0][2] * (A[1][0]*A[2][1] - A[1][1]*A[2][0])
     );
+
 }
 
-// クラメルの公式
+
+// Solve the system using Cramer's Rule
+
 function solve() {
 
     let a = [], b = [];
@@ -130,8 +147,10 @@ function solve() {
 
         if (row.some(v => v.trim() === "") ||
             constant.trim() === "") {
+
             document.getElementById("result").innerHTML =
-                "すべての欄に数値を入力してください。";
+                "Please enter a number in every field.";
+
             return;
         }
 
@@ -139,14 +158,20 @@ function solve() {
         let d = Number(constant);
 
         if (![...values, d].every(Number.isFinite)) {
+
             document.getElementById("result").innerHTML =
-                "正しい数値を入力してください。";
+                "Please enter valid numerical values.";
+
             return;
         }
 
         a.push(values);
         b.push(d);
+
     }
+
+
+    // Calculate determinants
 
     let D = det(a);
 
@@ -158,9 +183,13 @@ function solve() {
     let Dy = det(Ay);
     let Dz = det(Az);
 
+
     let result = document.getElementById("result");
 
     let eps = 1e-10;
+
+
+    // Check whether D is zero
 
     if (Math.abs(D) < eps) {
 
@@ -169,36 +198,51 @@ function solve() {
             Math.abs(Dz) < eps) {
 
             result.innerHTML =
-                "<b>解が1つに定まりません。</b><br>" +
-                "不定または解が無数に存在する可能性があります。";
+                "<b>The solution is not unique.</b><br>" +
+                "The system may have infinitely many solutions.";
 
         } else {
 
             result.innerHTML =
-                "<b>解なし</b><br>" +
-                "この連立方程式は矛盾しています。";
+                "<b>No Solution</b><br>" +
+                "The system is inconsistent.";
+
         }
 
         return;
+
     }
+
+
+    // Calculate x, y and z
 
     let x = Dx / D;
     let y = Dy / D;
     let z = Dz / D;
 
+
+    // Display the results
+
     result.innerHTML =
-        "<h3>計算結果</h3>" +
+
+        "<h3>Calculation Results</h3>" +
+
         "D = " + D + "<br>" +
         "Dx = " + Dx + "<br>" +
         "Dy = " + Dy + "<br>" +
         "Dz = " + Dz + "<hr>" +
+
         "<b>x = " + x.toFixed(6) + "</b><br>" +
         "<b>y = " + y.toFixed(6) + "</b><br>" +
         "<b>z = " + z.toFixed(6) + "</b>";
+
 }
 
-// 初期値に戻す
+
+// Reset all input values
+
 function resetValues() {
+
     const values = [
         1,1,1,6,
         2,-1,1,3,
@@ -212,11 +256,14 @@ function resetValues() {
     ];
 
     ids.forEach((id,i) => {
+
         document.getElementById(id).value = values[i];
+
     });
 
     document.getElementById("result").innerHTML =
-        "ここに計算結果が表示されます。";
+        "The results will be displayed here.";
+
 }
 
 </script>
